@@ -4,15 +4,13 @@
   height: 100vh;
 
   margin-top: 20px;
-
   display: flex;
   flex-direction: column;
 
-  align-items: center;
+  align-items: flex-start;
 }
 
 .content__cover > img{
-  border:5px solid rgb(144, 144, 144);
   border-radius: 5px;
   width: 500px;
   min-width: 500px;
@@ -23,7 +21,36 @@
   margin-top: 15px;
 }
 
-.content__description > p{
-  margin-top: 20px;
-  color: rgb(198, 197, 197);
+.content__description > a{
+  margin-left: 5rem;
+  border: solid transparent;
+  background-color: rgb(102, 102, 102);
+  border-radius: 5px;
+
 }
+
+.content__text > p {
+  margin-left: 15rem;
+  margin-right: 15rem;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+.content_title > h1{
+  margin-left: 14rem;
+}
+
+.container__top{
+  display: flex;
+  flex-direction: row;
+  align-items:self-end;
+  justify-content: center;
+  margin-left: 15rem;
+}
+
+.content__cover{
+  margin-left: 40rem;
+}
+
+
+

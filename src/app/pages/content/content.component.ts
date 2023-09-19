@@ -11,6 +11,7 @@ export class ContentComponent implements OnInit {
   photoCover:string = ""
   contentTitle:string = ""
   contentDescription:string = ""
+  contentText:string = ""
   private id:string | null = "0"
 
   constructor(
@@ -25,12 +26,13 @@ export class ContentComponent implements OnInit {
     this.setValuesToComponent(this.id)
   }
 
-  setValuesToComponent(id:string | null){
+  setValuesToComponent(id:string | any){
     const result = dataFake.filter(article => article.id == id)[0]
 
     this.contentTitle = result.title
     this.contentDescription = result.description
     this.photoCover = result.photoCover
+    this.contentText = result.contentText
   }
 
 }

@@ -25,6 +25,11 @@
   color: grey;
 }
 
+a:hover {
+  color: rgb(158, 158, 158);
+  transition: 3sec;
+}
+
 .big-card__photo > img{
   width: 100%;
   min-width: 400px;
